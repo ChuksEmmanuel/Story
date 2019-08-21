@@ -69,7 +69,53 @@ Updated 1 path from the index
  chukw@Chuks MINGW64 ~/OneDrive/Desktop/node/gitAndGitHub/story (master)   
 $ git remote add origin https://github.com/Chuks-dev/Story.git
 
-Push your local repo to ur remote re
+Push your local repo to ur remote repository
 
 
-The git ignore file are files that you do not want to move to  your public repository 
+<!-- The git ignore file are files that you do not want to move to  your public repository -->
+<!-- first we have to create a hidden file called  --> .gitignore
+chukw@Chuks MINGW64 ~/OneDrive/Desktop/node/gitAndGitHub/project
+$ touch .gitignore 
+in the .gitignore file we can specify the name of files that we want to ignore
+it has some rules
+1. the pound sign # is used to write comments
+    e.g #the below are pod files that i want to ignore
+2. the asterisk sign a file extension we remove all files that extension
+    e.g *.txt
+
+
+
+
+We use the following command to remove files from the staging area the . was used to remove all the files, the -r flag stands for recursive
+
+chukw@Chuks MINGW64 ~/OneDrive/Desktop/node/gitAndGitHub/project (master)
+$ git rm --cached -r .
+rm '.gitignore'
+rm 'file1.txt' 
+rm 'file2.txt' 
+rm 'file3.txt' 
+rm 'secretFile.txt'
+
+<!-- Creating new branches -->
+<!-- run the command  --> git branch 
+<!-- Then what you want to call the branch -->
+chukw@Chuks MINGW64 ~/OneDrive/Desktop/node/gitAndGitHub/story (master)
+$ git branch alien-plot
+
+<!-- To see the branches you have, just write down  --> git branch
+chukw@Chuks MINGW64 ~/OneDrive/Desktop/node/gitAndGitHub/story (master)
+$ git branch
+  alien-plot
+* master
+
+<!-- The asterisk shows you which branch you are currently on -->
+
+<!-- To switch branches , just run --> git checkout 
+<!-- Then the name of the branch you want to switch to -->
+chukw@Chuks MINGW64 ~/OneDrive/Desktop/node/gitAndGitHub/story (master)
+$ git checkout alien-plot 
+Switched to branch 'alien-plot'
+M       git.md
+
+chukw@Chuks MINGW64 ~/OneDrive/Desktop/node/gitAndGitHub/story (alien-plot)
+$
